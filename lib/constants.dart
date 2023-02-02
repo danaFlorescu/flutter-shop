@@ -14,3 +14,11 @@ const textGreyStyleSelected = TextStyle(
   decorationStyle: TextDecorationStyle.solid,
   fontWeight: FontWeight.bold,
 );
+
+const textTitleProduct = TextStyle(fontSize: 16.0, color: Colors.black54);
+
+const textPriceStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+  fontSize: 16.0,
+);

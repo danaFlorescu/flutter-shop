@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                 //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
+                    padding: const EdgeInsets.fromLTRB(16, 20, 15, 5),
                     child: Text(
                       'Hand bag',
                       style: textGreyStyleSelected,
@@ -47,6 +47,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
                     child: ReusableCard(
@@ -60,6 +61,7 @@ class HomePage extends StatelessWidget {
                       color: Color(0xff845A37),
                     ),
                   ),
+                  SizedBox(width: 15.0),
                 ],
               ),
               Row(
@@ -76,6 +78,7 @@ class HomePage extends StatelessWidget {
                       color: Color(0xffE6B398),
                     ),
                   ),
+                  SizedBox(width: 15.0),
                 ],
               ),
               Row(
@@ -92,6 +95,7 @@ class HomePage extends StatelessWidget {
                       color: Color(0xffAEAEAE),
                     ),
                   ),
+                  SizedBox(width: 15.0),
                 ],
               ),
             ],
