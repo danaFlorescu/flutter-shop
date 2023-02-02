@@ -18,21 +18,31 @@ class HomePage extends StatelessWidget {
       body: Scrollbar(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    'Hand bag',
-                    style: textGreyStyle,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
+                    child: Text(
+                      'Hand bag',
+                      style: textGreyStyleSelected,
+                    ),
                   ),
-                  Text(
-                    'Jewerly',
-                    style: textGreyStyle,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(15, 15, 15, 5),
+                    child: Text(
+                      'Jewerly',
+                      style: textGreyStyle,
+                    ),
                   ),
-                  Text(
-                    'Clothes',
-                    style: textGreyStyle,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(15, 15, 15, 5),
+                    child: Text(
+                      'Clothes',
+                      style: textGreyStyle,
+                    ),
                   ),
                 ],
               ),

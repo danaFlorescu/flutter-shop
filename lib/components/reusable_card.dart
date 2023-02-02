@@ -10,14 +10,33 @@ class ReusableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {},
-      child: Container(
-        margin: EdgeInsets.all(15.0),
-        padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-        child: Image.asset(imagePath),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            margin: EdgeInsets.all(15.0),
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Image.asset(imagePath),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(15, 0, 0, 0),
+            child: Text(
+              'Office bag',
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(15, 0, 0, 0),
+            child: Text(
+              '\$1234',
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+            ),
+          ),
+        ],
       ),
     );
   }
