@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shop/constants.dart';
 
 class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.imagePath, required this.color});
+  ReusableCard(
+      {required this.imagePath,
+      required this.color,
+      required this.titleOfProduct,
+      required this.priceOfProduct});
 
   final String imagePath;
   final Color color;
+  final String titleOfProduct;
+  final String priceOfProduct;
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +31,11 @@ class ReusableCard extends StatelessWidget {
             child: Image.asset(imagePath),
           ),
           TextBelowCard(
-            textText: 'Office bag',
+            textText: titleOfProduct,
             textStyle: textTitleProduct,
           ),
           TextBelowCard(
-            textText: '\$1234',
+            textText: priceOfProduct,
             textStyle: textPriceStyle,
           ),
           SizedBox(
