@@ -39,30 +39,48 @@ class HomePage extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: ReusableCard(),
+                    child: ReusableCard(
+                      imagePath: 'images/bag_1.png',
+                      color: Color(0xff3D81AE),
+                    ),
                   ),
                   Expanded(
-                    child: ReusableCard(),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: ReusableCard(),
-                  ),
-                  Expanded(
-                    child: ReusableCard(),
+                    child: ReusableCard(
+                      imagePath: 'images/bag_2.png',
+                      color: Color(0xff845A37),
+                    ),
                   ),
                 ],
               ),
               Row(
                 children: [
                   Expanded(
-                    child: ReusableCard(),
+                    child: ReusableCard(
+                      imagePath: 'images/bag_3.png',
+                      color: Color(0xff969593),
+                    ),
                   ),
                   Expanded(
-                    child: ReusableCard(),
+                    child: ReusableCard(
+                      imagePath: 'images/bag_4.png',
+                      color: Color(0xffE6B398),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: ReusableCard(
+                      imagePath: 'images/bag_5.png',
+                      color: Color(0xffFC7885),
+                    ),
+                  ),
+                  Expanded(
+                    child: ReusableCard(
+                      imagePath: 'images/bag_6.png',
+                      color: Color(0xffAEAEAE),
+                    ),
                   ),
                 ],
               ),
