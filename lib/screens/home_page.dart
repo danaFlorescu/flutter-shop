@@ -78,6 +78,7 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath1,
@@ -86,6 +87,7 @@ class HomePage extends StatelessWidget {
                       priceOfProduct: priceOfProduct1,
                     ),
                   ),
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath2,
@@ -99,6 +101,7 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 children: [
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath3,
@@ -107,6 +110,7 @@ class HomePage extends StatelessWidget {
                       priceOfProduct: priceOfProduct3,
                     ),
                   ),
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath4,
@@ -120,6 +124,7 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 children: [
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath5,
@@ -128,6 +133,7 @@ class HomePage extends StatelessWidget {
                       priceOfProduct: priceOfProduct5,
                     ),
                   ),
+                  SizedBox(width: 15.0),
                   Expanded(
                     child: ReusableCard(
                       imagePath: imgPath6,
